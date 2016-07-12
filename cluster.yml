@@ -17,4 +17,5 @@
 
 - hosts: kube-master[0]
   roles:
-    - {role: kubernetes-apps, tags: apps}
+    - {role: kubernetes-apps, tags: apps, when: False}
+    - {role: kubernetes-addons/manager, tags: addons, when: True }

@@ -1,0 +1,5 @@
+---
+- name: Add addon manager
+  template:
+    src: kube-addon-manager.manifest.j2
+    dest: "{{ kube_manifest_dir }}/kube-addon-manager.manifest"
