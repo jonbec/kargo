@@ -13,9 +13,10 @@
 
 - hosts: k8s-cluster
   roles:
-    - { role: dnsmasq, tags: dnsmasq }
+    - { role: dnsmasq, tags: dnsmasq, when: False }
 
 - hosts: kube-master[0]
   roles:
     - {role: kubernetes-apps, tags: apps, when: False}
     - {role: kubernetes-addons/manager, tags: addons, when: True }
+    - {role: kubernetes-addons/dns, tags: addons, when: True }
