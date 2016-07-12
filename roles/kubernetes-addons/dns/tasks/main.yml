@@ -7,10 +7,10 @@
 - name: Add kube dns service yaml
   template:
     src: kube-dns-service.yaml.j2
-    dest: {{ kube_addons_kubedns_dir }}/kube-dns-service.yaml
+    dest: "{{ kube_addons_kubedns_dir }}/kube-dns-service.yaml"
 
 - name: Add kube dns rc yaml
   template:
     src: kube-dns-rc.yaml.j2
-    dest: {{ kube_addons_kubedns_dir }}/kube-dns-rc.yaml
+    dest: "{{ kube_addons_kubedns_dir }}/kube-dns-rc.yaml"
     
