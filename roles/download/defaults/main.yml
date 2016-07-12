@@ -12,16 +12,17 @@ calico_version: v0.20.0
 calico_cni_version: v1.3.1
 weave_version: v1.5.0
 
+base_download_url: "https://storage.googleapis.com/kargo/"
 # Download URL's
-kubelet_download_url: "https://storage.googleapis.com/kargo/{{kube_version}}_kubernetes-kubelet"
-apiserver_download_url: "https://storage.googleapis.com/kargo/{{kube_version}}_kubernetes-apiserver"
-kubectl_download_url: "https://storage.googleapis.com/kargo/{{kube_version}}_kubernetes-kubectl"
+kubelet_download_url: "{{ base_download_url }}{{kube_version}}_kubernetes-kubelet"
+apiserver_download_url: "{{ base_download_url }}{{kube_version}}_kubernetes-apiserver"
+kubectl_download_url: "{{ base_download_url }}{{kube_version}}_kubernetes-kubectl"
 
-etcd_download_url: "https://storage.googleapis.com/kargo/{{etcd_version}}_etcd"
-calico_download_url: "https://storage.googleapis.com/kargo/{{calico_version}}_calico"
-calico_cni_download_url: "https://storage.googleapis.com/kargo/{{calico_cni_version}}_calico-cni-plugin"
-calico_cni_ipam_download_url: "https://storage.googleapis.com/kargo/{{calico_cni_version}}_calico-cni-plugin-ipam"
-weave_download_url: "https://storage.googleapis.com/kargo/{{weave_version}}_weave"
+etcd_download_url: "{{ base_download_url }}{{etcd_version}}_etcd"
+calico_download_url: "{{ base_download_url }}{{calico_version}}_calico"
+calico_cni_download_url: "{{ base_download_url }}{{calico_cni_version}}_calico-cni-plugin"
+calico_cni_ipam_download_url: "{{ base_download_url }}{{calico_cni_version}}_calico-cni-plugin-ipam"
+weave_download_url: "{{ base_download_url }}{{weave_version}}_weave"
 
 # Checksums
 calico_checksum: "0d1d15c03ea53cc1a16f2faf02626ed8951829ece410a36fdb93e5a19fbab68d"
