@@ -1,0 +1,7 @@
+kube_addons_kubedns_dir: "{{kube_addons_dir}}/kube-dns"
+kubedns_image_repo: gcr.io/google-containers/kubedns-amd64
+kubedns_image_tag: 1.6
+kube_dnsmasq_image_repo: gcr.io/google-containers/kube-dnsmasq-amd64
+kube_dnsmasq_image_tag: 1.3
+exechealthz_image_repo: gcr.io/google-containers/exechealthz-amd64
+exechealthz_image_tag: 1.0

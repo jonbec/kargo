@@ -1,2 +1,3 @@
+kube_addons_dir: "/etc/kubernetes/addons"
 kubernetes_addon_manager_image_repo: "gcr.io/google-containers/kube-addon-manager"
 kubernetes_addon_manager_image_tag: "v4"

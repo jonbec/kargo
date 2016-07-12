@@ -3,3 +3,10 @@
   template:
     src: kube-addon-manager.manifest.j2
     dest: "{{ kube_manifest_dir }}/kube-addon-manager.manifest"
+
+- name: Create addon dir
+  file:
+    state: directory
+    path: "{{ kube_addons_dir }}"
+
+
